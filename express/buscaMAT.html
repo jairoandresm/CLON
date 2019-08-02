@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MATERIALES_CODENSA</title>
+  </head>
+  <input type="text" id="NORMA" value="">
+  <div>
+          <select id="LINEA" class="estilo">
+              <option id="blanco"></option>
+              <option id="opcion0" value="0">LV</option>
+              <option id="opcion0" value="1">LM</option>
+              <option id="opcion0" value="2">CV</option>
+            </select>
+        </div>
+        <select id="ACTIVIDAD" class="estilo">
+            <option id="blanco"></option>
+            <option id="opcion0" value="0">CAMBIO</option>
+            <option id="opcion0" value="1">INSTALACIÓN</option>
+            <option id="opcion0" value="2">RETIRO</option>
+          </select>
+      </div>
+  <input type="submit" id="boton" value="escoger">
+  <body>
+    <script src= MATERIALES.js>
+    </script>
+    <script src=LM_CAMBIO.js>
+    </script>
+    <script src=LMINSTALACION.js>
+    </script>
+    <script src=LMRETIRO.js>
+    </script>
+    <script src=LVCAMBIO.js>
+    </script>
+    <script src=LVINSTALACION.js>
+    </script>
+    <script src=LVRETIRO.js>
+    </script>
+    <script src=CIVIL.js>
+    </script>
+  <script>
+  boton.addEventListener("click", escoger );
+
+    function escoger (){
+      var a=document.getElementById("NORMA").value;
+      var LINEA=document.getElementById("LINEA").value;
+      LINEA=parseInt(LINEA);
+      var ACTIVIDAD=document.getElementById("ACTIVIDAD").value;
+      ACTIVIDAD=parseInt(ACTIVIDAD);
+      console.log(a);
+      document.write("<h1>Materiales</h1><br>");
+      for(var i= 0 in MATERIALES){
+        if(a==MATERIALES[i].ESTRUCTURA) {
+          var MAT=[MATERIALES[i].ESTRUCTURA, MATERIALES[i].CODIGO, MATERIALES[i].DESCIPCION, MATERIALES[i].CANT];
+          document.write("<br>" + MAT);
+        }}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if (LINEA==0 && ACTIVIDAD==0) {
+    document.write("<h1>Mano de obra LV CAMBIO</h1><br>");
+    for(var j= 0 in LVCAMBIO){
+    if(a==LVCAMBIO[j].ESTRUCTURA) {
+    var LINEAVC=[LVCAMBIO[j].ESTRUCTURA, LVCAMBIO[j].BAREMO, LVCAMBIO[j].DESCRIPCION, LVCAMBIO[j].CANT];
+    document.write("<br>" + LINEAVC);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==0 && ACTIVIDAD==1) {
+    document.write("<h1>Mano de obra LV INSTALACIÓN</h1><br>");
+    for(var k= 0 in LVINSTALACION){
+    if(a==LVINSTALACION[k].ESTRUCTURA) {
+    var LINEAVI=[LVINSTALACION[k].ESTRUCTURA, LVINSTALACION[k].BAREMO, LVINSTALACION[k].DESCRIPCION, LVINSTALACION[k].CANT];
+    document.write("<br>" + LINEAVI);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==0 && ACTIVIDAD==2) {
+    document.write("<h1>Mano de obra LV RETIRO</h1><br>");
+    for(var j= 0 in LVRETIRO){
+    if(a==LVRETIRO[j].ESTRUCTURA) {
+    var LINEAVR=[LVRETIRO[j].ESTRUCTURA, LVRETIRO[j].BAREMO, LVRETIRO[j].DESCRIPCION, LVRETIRO[j].CANT];
+    document.write("<br>" + LINEAVR);
+    console.log(LINEAVR);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==0) {
+    document.write("<h1>Mano de obra LM CAMBIO</h1><br>");
+    for(var j= 0 in LMCAMBIO){
+    if(a==LMCAMBIO[j].ESTRUCTURA) {
+    var LINEAMC=[LMCAMBIO[j].ESTRUCTURA, LMCAMBIO[j].BAREMO, LMCAMBIO[j].DESCRIPCION, LMCAMBIO[j].CANT];
+    document.write("<br>" + LINEAMC);
+    console.log(LINEAMC);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==1) {
+    document.write("<h1>Mano de obra LM INSTALACIÓN</h1><br>");
+    for(var j= 0 in LMINSTALACION){
+    if(a==LMINSTALACION[j].ESTRUCTURA) {
+    var LINEAMI=[LMINSTALACION[j].ESTRUCTURA, LMINSTALACION[j].BAREMO, LMINSTALACION[j].DESCRIPCION, LMINSTALACION[j].CANT];
+    document.write("<br>" + LINEAMI);
+    console.log(LINEAMI);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==2) {
+    document.write("<h1>Mano de obra LM RETIRO</h1><br>");
+    for(var j= 0 in LMRETIRO){
+    if(a==LMRETIRO[j].ESTRUCTURA) {
+    var LINEAMR=[LMRETIRO[j].ESTRUCTURA, LMRETIRO[j].BAREMO, LMRETIRO[j].DESCRIPCION, LMRETIRO[j].CANT];
+    document.write("<br>" + LINEAMR);
+    console.log(LINEAMR);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==2) {
+    document.write("<h1>Mano de obra CIVIL</h1><br>");
+    for(var j= 0 in CIVIL){
+    if(a==CIVIL[j].ESTRUCTURA) {
+    var OBRA=[CIVIL[j].ESTRUCTURA, CIVIL[j].BAREMO, CIVIL[j].DESCRIPCION, CIVIL[j].CANT];
+    document.write("<br>" + OBRA);
+    console.log(LINEAMR);}}}
+
+
+
+
+
+
+
+
+    }
+
+  </script>
+
+  </body>
+</html>

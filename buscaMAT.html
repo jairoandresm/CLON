@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MATERIALES_CODENSA</title>
+  </head>
+  <input type="text" id="NORMA" value="">
+  <div>
+          <select id="LINEA" class="estilo">
+              <option id="blanco"></option>
+              <option id="opcion0" value="0">LV</option>
+              <option id="opcion0" value="1">LM</option>
+              <option id="opcion0" value="2">CV</option>
+            </select>
+        </div>
+        <select id="ACTIVIDAD" class="estilo">
+            <option id="blanco"></option>
+            <option id="opcion0" value="0">CAMBIO</option>
+            <option id="opcion0" value="1">INSTALACIÓN</option>
+            <option id="opcion0" value="2">RETIRO</option>
+          </select>
+      </div>
+      <label><input type="checkbox" id="cbox1" value="first_checkbox"> Conductor aéreo</label><br>
+
+    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">conductor subterráneo</label>
+      <div>
+              <select id="AEREO" class="estilo">
+                  <option id="blanco">Conductor aéreo</option>
+                  <option id="opcion0" value="0">266,8 MCM ACSR</option>
+                  <option id="opcion0" value="1">4/0 AWG ACSR</option>
+                  <option id="opcion0" value="2">2/0 AWG ACSR</option>
+                  <option id="opcion0" value="3">2 AWG ACSR</option>
+                  <option id="opcion0" value="4">100 mm2 AAAC semi 15KV</option>
+                  <option id="opcion0" value="5">125 mm2 AAAC semi 15KV</option>
+                  <option id="opcion0" value="6">125 mm2 AAAC semi 35KV</option>
+                  <option id="opcion0" value="7">63 mm2 AAAC semi 15KV</option>
+                  <option id="opcion0" value="8">3x120mm2 AAC 15KV+120mm2 AAAC Aisl</option>
+                  <option id="opcion0" value="9">3x120mm2 AAC 35KV+120mm2 AAAC Aisl</option>
+                  <option id="opcion0" value="10">3x70mm2 AAC 15KV+120mm2 AAAC Aisl</option>
+                  <option id="opcion0" value="11">Cable 3x95 mm2 AAC+1x50 mm2 AAAC Trenz</option>
+                  <option id="opcion0" value="12">Cable 3x35 mm2 AAC+1x50 mm2 AAAC Trenz</option>
+                  <option id="opcion0" value="13">Cable 2x1/0 AWG AAC XLPE+1/0 AWG ACSR Trenz</option>
+                  <option id="opcion0" value="14">Cable 1x2 AWG AAC XLPE+1x2 AWG ACSR Trenz</option>
+                  <option id="opcion0" value="15">100 mm2 AAAC semi 15KV Compacta</option>
+                  <option id="opcion0" value="16">125 mm2 AAAC semi 15KV Compacta</option>
+                  <option id="opcion0" value="17">125 mm2 AAAC semi 35KV Compacta</option>
+                  <option id="opcion0" value="18">63 mm2 AAAC semi 15KV Compacta</option>
+                </select>
+            </div>
+
+
+            <select id="SUB" class="estilo">
+                <option id="blanco">Conductor subterráneo</option>
+                <option id="opcion0" value="0">1000 MCM Cu monopolar 15KV XLPE</option>
+                <option id="opcion0" value="1">500 MCM Cu monopolar 35KV XLPE</option>
+                <option id="opcion0" value="2">240 mm2 Al Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="3">185 mm2 Al Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="4">150 mm2 Cu Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="5">120 mm2 Al Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="6">120 mm2 Cu Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="7">70 mm2 Al Triplex 15 KV XLPE</option>
+                <option id="opcion0" value="8">240 mm2 Al Triplex 35 KV XLPE</option>
+                <option id="opcion0" value="9">120 mm2 Al Triplex 35 KV XLPE</option>
+                <option id="opcion0" value="10">Cable 240mm2 Al Aislado 0,6/1kV</option>
+                <option id="opcion0" value="11">Cable 185 mm2 Al Aislado 0,6/1kV</option>
+                <option id="opcion0" value="12">Cable 120mm2 Al Aislado 0,6/1kV</option>
+                <option id="opcion0" value="13">Cable 70mm2 Al Aislado 0,6/1kV</option>
+                <option id="opcion0" value="14">Cable 25mm2 Al Aislado 0,6/1kV</option>
+              </select>
+            </div>
+
+
+
+            <div>
+            <select id="ACTIVIDAD_AEREO" class="estilo">
+                <option id="blanco"></option>
+                <option id="opcion0" value="0">CAMBIO</option>
+                <option id="opcion0" value="1">INSTALACIÓN</option>
+                <option id="opcion0" value="2">RETIRO</option>
+              </select>
+          </div>
+            <input type="text" id="CANTIDAD" value="">
+  <input type="submit" id="boton" value="escoger">
+  <body>
+    <script src= MATERIALES.js>
+    </script>
+    <script src=LM_CAMBIO.js>
+    </script>
+    <script src=LMINSTALACION.js>
+    </script>
+    <script src=LMRETIRO.js>
+    </script>
+    <script src=LVCAMBIO.js>
+    </script>
+    <script src=LVINSTALACION.js>
+    </script>
+    <script src=LVRETIRO.js>
+    </script>
+    <script src=CIVIL.js>
+    </script>
+    <script src= AEREOS.js></script>
+    <script src=SUB.js></script>
+  <script>
+
+  boton.addEventListener("click", escoger );
+
+    function escoger (){
+      var a=document.getElementById("NORMA").value;
+      var LINEA=document.getElementById("LINEA").value;
+      LINEA=parseInt(LINEA);
+      var ACTIVIDAD=document.getElementById("ACTIVIDAD").value;
+      ACTIVIDAD=parseInt(ACTIVIDAD);
+      var a1=document.getElementById("AEREO").value;
+      a1=parseInt(a1);
+      var b=document.getElementById("ACTIVIDAD_AEREO").value;
+      b=parseInt(b);
+      var c=document.getElementById("CANTIDAD").value;
+      c=parseInt(c);
+      console.log(a);
+      document.write("<h1>Materiales</h1><br>");
+      for(var i= 0 in MATERIALES){
+        if(a==MATERIALES[i].ESTRUCTURA) {
+          var MAT=[MATERIALES[i].ESTRUCTURA, MATERIALES[i].CODIGO, MATERIALES[i].DESCIPCION, MATERIALES[i].CANT];
+          document.write("<br>" + MAT);
+        }}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if (LINEA==0 && ACTIVIDAD==0) {
+    document.write("<h1>Mano de obra LV CAMBIO</h1><br>");
+    for(var j= 0 in LVCAMBIO){
+    if(a==LVCAMBIO[j].ESTRUCTURA) {
+    var LINEAVC=[LVCAMBIO[j].ESTRUCTURA, LVCAMBIO[j].BAREMO, LVCAMBIO[j].DESCRIPCION, LVCAMBIO[j].CANT];
+    document.write("<br>" + LINEAVC);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==0 && ACTIVIDAD==1) {
+    document.write("<h1>Mano de obra LV INSTALACIÓN</h1><br>");
+    for(var k= 0 in LVINSTALACION){
+    if(a==LVINSTALACION[k].ESTRUCTURA) {
+    var LINEAVI=[LVINSTALACION[k].ESTRUCTURA, LVINSTALACION[k].BAREMO, LVINSTALACION[k].DESCRIPCION, LVINSTALACION[k].CANT];
+    document.write("<br>" + LINEAVI);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==0 && ACTIVIDAD==2) {
+    document.write("<h1>Mano de obra LV RETIRO</h1><br>");
+    for(var j= 0 in LVRETIRO){
+    if(a==LVRETIRO[j].ESTRUCTURA) {
+    var LINEAVR=[LVRETIRO[j].ESTRUCTURA, LVRETIRO[j].BAREMO, LVRETIRO[j].DESCRIPCION, LVRETIRO[j].CANT];
+    document.write("<br>" + LINEAVR);
+    console.log(LINEAVR);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==0) {
+    document.write("<h1>Mano de obra LM CAMBIO</h1><br>");
+    for(var j= 0 in LMCAMBIO){
+    if(a==LMCAMBIO[j].ESTRUCTURA) {
+    var LINEAMC=[LMCAMBIO[j].ESTRUCTURA, LMCAMBIO[j].BAREMO, LMCAMBIO[j].DESCRIPCION, LMCAMBIO[j].CANT];
+    document.write("<br>" + LINEAMC);
+    console.log(LINEAMC);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==1) {
+    document.write("<h1>Mano de obra LM INSTALACIÓN</h1><br>");
+    for(var j= 0 in LMINSTALACION){
+    if(a==LMINSTALACION[j].ESTRUCTURA) {
+    var LINEAMI=[LMINSTALACION[j].ESTRUCTURA, LMINSTALACION[j].BAREMO, LMINSTALACION[j].DESCRIPCION, LMINSTALACION[j].CANT];
+    document.write("<br>" + LINEAMI);
+    console.log(LINEAMI);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==1 && ACTIVIDAD==2) {
+    document.write("<h1>Mano de obra LM RETIRO</h1><br>");
+    for(var j= 0 in LMRETIRO){
+    if(a==LMRETIRO[j].ESTRUCTURA) {
+    var LINEAMR=[LMRETIRO[j].ESTRUCTURA, LMRETIRO[j].BAREMO, LMRETIRO[j].DESCRIPCION, LMRETIRO[j].CANT];
+    document.write("<br>" + LINEAMR);
+    console.log(LINEAMR);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    else if (LINEA==2) {
+    document.write("<h1>Mano de obra CIVIL</h1><br>");
+    for(var j= 0 in CIVIL){
+    if(a==CIVIL[j].ESTRUCTURA) {
+    var OBRA=[CIVIL[j].ESTRUCTURA, CIVIL[j].BAREMO, CIVIL[j].DESCRIPCION, CIVIL[j].CANT];
+    document.write("<br>" + OBRA);
+    console.log(LINEAMR);}}}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+else if (b==0) {
+  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
+  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].CAMBIO);*/
+  var MAT_CABLE=[a1,AEREOS[a1].CODIGO,AEREOS[a1].CONDUCTORES_AEREOS]
+  MAT_CABLE.push(c);
+  document.write("Mateiral " +"<br>" + MAT_CABLE)
+  var MO_CABLE=[a1,AEREOS[a1].CAMBIO,"Cambio de conductor aéreo"]
+  MO_CABLE.push(c);
+  document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
+}
+else if (b==1) {
+  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
+  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].INSTALACION);*/
+  var MAT_CABLE=[a,AEREOS[a].CODIGO,AEREOS[a].CONDUCTORES_AEREOS]
+  document.write("Mateiral " +"<br>" + MAT_CABLE)
+  var MO_CABLE=[a,AEREOS[a].INSTALACION,"Instalación de conductor aéreo"]
+  document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
+}
+else if (b==2) {
+  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
+  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].RETIRO);*/
+  var MAT_CABLE=[a,AEREOS[a].CODIGO,AEREOS[a].CONDUCTORES_AEREOS]
+  document.write("Mateiral " +"<br>" + MAT_CABLE)
+  var MO_CABLE=[a,AEREOS[a].RETIRO,"Retiro de conductor aéreo"]
+  document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
+}
+
+
+
+
+
+
+    }
+
+  </script>
+
+  </body>
+</html>

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>MATERIALES_CODENSA</title>
   </head>
-  <input type="text" id="NORMA" value="">
+  <label><input type="text" id="NORMA" value="">Norma Codensa</label>
+
   <div>
           <select id="LINEA" class="estilo">
               <option id="blanco"></option>
@@ -20,7 +21,7 @@
             <option id="opcion0" value="2">RETIRO</option>
           </select>
       </div>
-      <label><input type="checkbox" id="cbox1" value="first_checkbox"> Conductor aéreo</label><br>
+      <label><input type="checkbox" id="cbox1" value=" "> Conductor aéreo</label><br>
 
     <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">conductor subterráneo</label>
       <div>
@@ -178,9 +179,16 @@
     document.write("<br>" + OBRA);
     console.log(LINEAMR);}}}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-else if (b==0) {
-  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
-  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].CAMBIO);*/
+//// CONDUCTORES
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var check=document.getElementById('cbox1');
+
+if(check.checked){console.log(check)}
+
+/*
+ if (b==0) {
+
   var MAT_CABLE=[a1,AEREOS[a1].CODIGO,AEREOS[a1].CONDUCTORES_AEREOS]
   MAT_CABLE.push(c);
   document.write("Mateiral " +"<br>" + MAT_CABLE)
@@ -189,21 +197,18 @@ else if (b==0) {
   document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
 }
 else if (b==1) {
-  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
-  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].INSTALACION);*/
+
   var MAT_CABLE=[a,AEREOS[a].CODIGO,AEREOS[a].CONDUCTORES_AEREOS]
   document.write("Mateiral " +"<br>" + MAT_CABLE)
   var MO_CABLE=[a,AEREOS[a].INSTALACION,"Instalación de conductor aéreo"]
   document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
 }
 else if (b==2) {
-  /*document.write("Materiales " + AEREOS[a].CONDUCTORES_AEREOS + "<br>" + AEREOS[a].CODIGO+ "<br>");
-  document.write("<br><br> Mano de obra " + "<br>" + AEREOS[a].RETIRO);*/
   var MAT_CABLE=[a,AEREOS[a].CODIGO,AEREOS[a].CONDUCTORES_AEREOS]
   document.write("Mateiral " +"<br>" + MAT_CABLE)
   var MO_CABLE=[a,AEREOS[a].RETIRO,"Retiro de conductor aéreo"]
   document.write("<br> Mano de obra " +"<br>" + MO_CABLE);
-}
+}*/
 
 
 
